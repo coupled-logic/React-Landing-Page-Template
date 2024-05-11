@@ -2,7 +2,7 @@ import React from "react";
 
 export const Navigation = (props) => {
   return (
-  <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+  <nav id="menu" className="navbar navbar-default navbar-fixed-top" style={{ backgroundColor: 'var(--navy)' }}>
       <div className="container">
         <div className="navbar-header">
           <button
@@ -18,7 +18,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            AIB ESTATE PLANNING LTD
+            React Landing Page
           </a>{" "}
         </div>
 
@@ -28,7 +28,8 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
+            <a href="#features" className="page-scroll" style={{ color: 'var(--beige)' }}>
+
                 Features
               </a>
             </li>

@@ -151,15 +151,15 @@ export const Contact = (props) => {
         </div>
       </div>
       <div id="footer">
-  <div className="container text-center">
-    <p>
-      &copy; 2024 AIB Estate Planning Ltd. All rights reserved.<br />
-      Registered in England and Wales. Company Number: 13732256.<br />
-      Registered Office: 6 Neptune Court, Hallam Way, Blackpool, England, FY4 5LZ.<br />
-      Website design by <a href="http://www.coupledlogic.com" rel="nofollow">CoupledLogic</a>
+        <div className="container text-center">
+        <p>
+          &copy; 2024 AIB Estate Planning Ltd. All rights reserved.<br>
+          Registered in England and Wales. Company Number: 13732256.<br>
+          Registered Office: 6 Neptune Court, Hallam Way, Blackpool, England, FY4 5LZ.<br>
+      Website design by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a>
     </p>
-  </div>
-  </div>
-  </div>
-);
+        </div>
+      </div>
+    </div>
+  );
 };

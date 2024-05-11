@@ -1,9 +1,3 @@
-:root {
-  --navy: #00154f;
-  --yellow: #f4af1b;
-  --beige: #f2bc94;
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -29,7 +23,7 @@ header .intro-text p {
 
 header .intro-text .btn-custom {
   background-color: var(--navy);
-  color: var(--yellow);
+  color: var(--white);
 }
 
 #menu {
@@ -38,7 +32,7 @@ header .intro-text .btn-custom {
 
 #menu .navbar-brand,
 #menu .nav li a {
-  color: var(--yellow);
+  color: var(--white);
 }
 
 #menu .nav li a:hover {
@@ -46,7 +40,7 @@ header .intro-text .btn-custom {
 }
 
 #features {
-  background-color: var(--beige);
+  background-color: var(--white);
 }
 
 #features h2,
@@ -71,11 +65,11 @@ header .intro-text .btn-custom {
 
 .btn-custom {
   background-color: var(--navy);
-  color: var(--yellow);
+  color: var(--white);
 }
 
 .btn-custom:hover {
-  background-color: var(--yellow);
+  background-color: var(--beige);
   color: var(--navy);
 }
 
@@ -84,14 +78,16 @@ a {
 }
 
 a:hover {
-  color: var(--yellow);
+  color: var(--beige);
 }
 
 #footer {
   background-color: var(--navy);
-  color: var(--yellow);
+  color: var(--white);
 }
 
 #footer a {
   color: var(--beige);
 }
+
+
