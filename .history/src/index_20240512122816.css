@@ -2,7 +2,6 @@
   --navy: #00154f;
   --yellow: #f4af1b;
   --beige: #f2bc94;
-  --white: #ffffff;
 }
 
 body {
@@ -70,7 +69,7 @@ header .intro-text .btn-custom {
   color: var(--navy);
 }
 
-#faq .disclosure-panel {
+#faq {
   background-color: var(--navy);
   color: var(--white);
 }

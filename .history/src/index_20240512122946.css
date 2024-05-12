@@ -70,7 +70,7 @@ header .intro-text .btn-custom {
   color: var(--navy);
 }
 
-#faq .disclosure-panel {
+#faq {
   background-color: var(--navy);
   color: var(--white);
 }

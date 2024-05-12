@@ -1,0 +1,88 @@
+{
+  "Header": {
+    "title": "Welcome to AIB Estate Planning",
+    "paragraph": "Protect your home, wealth and loved ones with expert estate planning services from AIB. We're here to help you plan for the future."
+  },
+  "About": {
+    "paragraph": "At AIB Estate Planning, we understand that protecting the things you care about most - your home, your assets, and your family - is your top priority. Our team of expert estate planners is here to guide you through the process of creating a comprehensive plan that ensures your final wishes are carried out and your loved ones are taken care of.",
+    "Why": [
+      "Experienced estate planning professionals",
+      "Personalised service tailored to your needs",  
+      "Wide range of services including Wills, Trusts, LPAs",
+      "Giving you peace of mind about the future"
+    ],
+    "Why2": [
+      "Close to a decade of combined industry experience",
+      "Transparent and caring service focused on you",
+      "Helping you make the right decisions for your estate",  
+      "Supporting you in planning for whatever life brings"
+    ]
+  },
+  "Services": [
+    {
+      "icon": "fa fa-file-text-o",
+      "name": "Wills",
+      "text": "Ensure your estate is distributed according to your wishes by putting a legally valid Will in place. Don't leave it up to the government to decide."
+    },
+    {
+      "icon": "fa fa-handshake-o", 
+      "name": "Lasting Power of Attorney",
+      "text": "Choose someone you trust to manage your affairs if you become unable to do so yourself. Get peace of mind with a Lasting Power of Attorney."
+    },
+    {
+      "icon": "fa fa-lock",
+      "name": "Trusts",
+      "text": "Protect your assets, provide for your loved ones, and possibly mitigate inheritance tax by setting up the appropriate Trusts for your situation."
+    },
+    {
+      "icon": "fa fa-home",
+      "name": "Property Trusts",
+      "text": "Make sure your share in a jointly owned property ends up with your chosen beneficiaries by severing the tenancy and creating a Trust."
+    },
+    {  
+      "icon": "fa fa-gavel",
+      "name": "Probate",
+      "text": "Get expert assistance in handling the legal and administrative process of closing out an estate after a death. We're here to help."
+    },
+    {
+      "icon": "fa fa-home",
+      "name": "Severence of Tenanacy",
+      "text": "Take the burden off your family by putting financial arrangements in place now to cover your funeral costs when the time comes."
+    }
+  ],
+  "Faq": [
+    {
+
+    }
+  ],
+  "Contact": {
+    "address": "6 Neptune Court, Hallam Way, Blackpool, England, FY4 5LZ",
+    "phone": "0800 8288 9020",  
+    "email": "info@aibestateplanning.com",
+    "facebook": "facebook.com/aibeplanning",
+    "twitter": "twitter.com/aib_ltd",
+    "youtube": "youtube.com/aibeplanning"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Free Consultation",
+      "text": "Speak with one of our expert estate planners to discuss your needs and get advice with no obligation."
+    },
+    {
+      "icon": "fa fa-home",
+      "title": "Protect Your Home",  
+      "text": "Put measures in place to ensure your home ends up with your loved ones no matter what happens."
+    },
+    {
+      "icon": "fa fa-heart",
+      "title": "Peace Of Mind",
+      "text": "Get the peace of mind that comes with knowing you've protected your family's future."  
+    },
+    {
+      "icon": "fa fa-check",
+      "title": "Bespoke Planning",
+      "text": "We create personalised estate plans tailored to your unique circumstances, never an off-the-shelf solution."
+    }
+  ]
+}

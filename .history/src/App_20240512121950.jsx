@@ -5,6 +5,7 @@ import { Features } from "./components/features";
 import { About } from "./components/about";
 import { Services } from "./components/services";
 import { Faq } from "./components/Faq";
+import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import { Trustpilot } from "./components/Trustpilot";
 import JsonData from "./data/data.json";
@@ -30,7 +31,9 @@ const App = () => {
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
       <Faq data={landingPageData.Faq} />
+
       <Trustpilot />
+      <Team data={landingPageData.Team} />
       <Contact data={landingPageData.Contact} />
     </div>
   );

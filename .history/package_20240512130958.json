@@ -21,6 +21,7 @@
     "eject": "react-scripts eject",
     "dev": "netlify dev"
   },
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
