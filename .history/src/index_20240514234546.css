@@ -1,0 +1,121 @@
+:root {
+  --navy: #00154f;
+  --yellow: #f4af1b;
+  --beige: #f2bc94;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  background-color: var(--beige);
+}
+
+header .intro-text h1,
+header .intro-text p {
+  color: var(--navy);
+}
+
+header .intro-text .btn-custom {
+  background-color: var(--navy);
+  color: var(--yellow);
+}
+
+#menu {
+  background-color: var(--navy);
+}
+
+#menu .navbar-brand,
+#menu .nav li a {
+  color: var(--yellow);
+}
+
+#menu .nav li a:hover {
+  color: var(--beige);
+}
+
+#features {
+  background-color: var(--beige);
+}
+
+#features h2,
+#features h3,
+#features p,
+#features i {
+  color: var(--navy);
+}
+
+#about h2,
+#about h3,
+#about p {
+  color: var(--navy);
+}
+
+#services h2,
+#services h3,
+#services p,
+#services i {
+  color: var(--navy);
+}
+
+#faq .faq-item {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+#faq h2 {
+  color: var(--yellow);
+}
+
+#faq .faq-button {
+  background-color: var(--beige);
+  color: var(--navy);
+}
+
+#faq .faq-button:hover {
+  background-color: var(--yellow);
+}
+
+#faq .faq-answer {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.btn-custom {
+  background-color: var(--navy);
+  color: var(--yellow);
+}
+
+.btn-custom:hover {
+  background-color: var(--yellow);
+  color: var(--navy);
+}
+
+a {
+  color: var(--navy);
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+#footer {
+  background-color: var(--navy);
+  color: var(--yellow);
+}
+
+#footer a {
+  color: var(--beige);
+}

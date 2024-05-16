@@ -1,0 +1,285 @@
+:root {
+  --navy: #00154f;
+  --yellow: #f4af1b;
+  --beige: #f2bc94;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  background-color: var(--beige);
+}
+
+header .intro-text h1,
+header .intro-text p {
+  color: var(--navy);
+}
+
+header .intro-text .btn-custom {
+  background-color: var(--navy);
+  color: var(--yellow);
+}
+
+#menu {
+  background-color: var(--navy);
+}
+
+#menu .navbar-brand,
+#menu .nav li a {
+  color: var(--yellow);
+}
+
+#menu .nav li a:hover {
+  color: var(--beige);
+}
+
+#features {
+  background-color: var(--beige);
+}
+
+#features h2,
+#features h3,
+#features p,
+#features i {
+  color: var(--navy);
+}
+
+#about h2,
+#about h3,
+#about p {
+  color: var(--navy);
+}
+
+#services h2,
+#services h3,
+#services p,
+#services i {
+  color: var(--navy);
+}
+
+/* FAQ Styles */
+.faq-container {
+  padding: 50px 20px;
+  background-color: var(--white);
+}
+
+.faq-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--navy);
+  margin-bottom: 10px;
+}
+
+.faq-button {
+  background-color: var(--beige);
+  color: var(--navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-button:hover {
+  background-color: var(--yellow);
+}
+
+.faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-icon .icon {
+  height: 24px;
+  width: 24px;
+}
+
+.faq-answer {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.faq-answer p {
+  margin: 0;
+}
+
+.btn-custom {
+  background-color: var(--navy);
+  color: var(--yellow);
+}
+
+.btn-custom:hover {
+  background-color: var(--yellow);
+  color: var(--navy);
+}
+
+a {
+  color: var(--navy);
+}
+
+a:hover {
+  color: var(--yellow);
+}
+
+#footer {
+  background-color: var(--navy);
+  color: var(--yellow);
+}
+
+#footer a {
+  color: var(--beige);
+}
+
+/* Contact Form Styles */
+#contact {
+  padding: 60px 0;
+}
+
+#contact .section-title {
+  margin-bottom: 30px;
+}
+
+#contact .section-title h2 {
+  color: var(--navy);
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#contact .section-title p {
+  color: var(--navy);
+  font-size: 1.2rem;
+}
+
+#contact .form-control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--navy);
+  background-color: var(--white);
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#contact .form-control:focus {
+  border-color: var(--yellow);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(244, 175, 27, 0.25);
+}
+
+#contact .form-group {
+  margin-bottom: 15px;
+}
+
+#contact .help-block.text-danger {
+  color: var(--yellow);
+}
+
+#contact .btn-custom {
+  background-color: var(--navy);
+  color: var(--yellow);
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact .btn-custom:hover {
+  background-color: var(--yellow);
+  color: var(--navy);
+}
+
+#contact .contact-info {
+  margin-top: 40px;
+}
+
+#contact .contact-item h3 {
+  color: var(--navy);
+}
+
+#contact .contact-item p {
+  color: var(--navy);
+}
+
+#contact .contact-item span {
+  font-weight: bold;
+}
+
+#contact .social ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact .social ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#contact .social ul li a {
+  color: var (--navy);
+  font-size: 20px;
+}
+
+#contact .social ul li a:hover {
+  color: var(--yellow);
+}
+
+#footer {
+  padding: 30px 0;
+  text-align: center;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#footer a {
+  color: var(--beige);
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: var(--yellow);
+}
