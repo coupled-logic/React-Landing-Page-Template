@@ -36,8 +36,8 @@
   /* Uncomment the color scheme you want to use */
 
   /* Color Scheme 1 */
-  /*
-  --color-bg: var(--dark-blue-1);
+  
+  /* --color-bg: var(--dark-blue-1);
   --color-fg1: var(--medium-blue-1);
   --color-fg2: var(--light-blue-1);
   --color-text: var(--white-1);
@@ -58,8 +58,8 @@
   */
 
   /* Color Scheme 4 */
-  /*
-  --color-bg: var(--blue-violet-4);
+  
+  /* --color-bg: var(--blue-violet-4);
   --color-fg1: var(--green-4);
   --color-fg2: var(--light-purple-4);
   --color-text: var(--white-4);
@@ -70,25 +70,19 @@
 :root {
   --nav-bg-color: var(--color-bg);
   --nav-text-color: var(--color-fg1);
-  --nav-hover-color: var(--color-fg2);
   --header-bg-color: var(--color-fg2);
   --header-text-color: var(--color-text);
-  --header-btn-bg-color: var(--color-bg);
-  --header-btn-text-color: var(--color-fg2);
-  --features-bg-color: var(--color-bg);
-  --features-title-color: var(--color-text);
-  --features-icon-color: var(--color-fg1);
-  --features-text-color: var(--color-fg2);
+  --feature-bg-color: var(--color-bg);
+  --feature-icon-color: var(--color-fg1);
+  --feature-text-color: var(--color-fg2);
   --about-bg-color: var(--color-fg1);
   --about-header-color: var(--color-bg);
-  --about-text-color: var(--color-bg);
-  --about-list-color: var(--color-fg2);
-  --services-bg-color: var(--color-bg);
-  --services-title-color: var(--color-text);
-  --services-text-color: var(--color-text);
-  --services-tile-bg-color: var(--color-fg2);
-  --services-icon-color: var(--color-bg);
-  --faq-bg-color: var(--color-fg1);
+  --about-text-color: var(--color-fg2);
+  --service-bg-color: var(--color-bg);
+  --service-text-color: var(--color-fg2);
+  --service-tile-bg-color: var(--color-fg1);
+  --service-icon-color: var(--color-bg);
+  --faq-bg-color: var(--color-bg);
   --faq-question-color: var(--color-bg);
   --faq-answer-bg-color: var(--color-fg2);
   --faq-answer-text-color: var(--color-bg);
@@ -195,7 +189,7 @@ header .intro-text .btn-custom {
 #about h2,
 #about h3,
 #about p {
-  color: var(--about-header-color);
+  color: var(--about-text-color);
 }
 
 #about ul {
@@ -204,7 +198,7 @@ header .intro-text .btn-custom {
 }
 
 #about ul li {
-  color: var(--about-list-color);
+  color: var(--about-li-color);
   margin: 10px 0;
 }
 
@@ -235,7 +229,7 @@ header .intro-text .btn-custom {
 }
 
 #services .service-item {
-  background-color: var(--services-tile-bg-color);
+  background-color: var(--services-item-bg-color);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -259,14 +253,14 @@ header .intro-text .btn-custom {
 }
 
 #services .service-desc h3 {
-  color: var(--services-icon-color);
+  color: var(--services-item-text-color);
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 #services .service-desc p {
-  color: var(--services-icon-color);
+  color: var(--services-item-text-color);
   font-size: 1rem;
   margin: 0;
 }
@@ -285,7 +279,7 @@ header .intro-text .btn-custom {
 .faq-title {
   font-size: 2rem;
   font-weight: bold;
-  color: var(--faq-question-color);
+  color: var(--faq-title-color);
   text-align: center;
   margin-bottom: 20px;
 }
@@ -296,13 +290,13 @@ header .intro-text .btn-custom {
 }
 
 .faq-item {
-  border-bottom: 1px solid var(--faq-question-color);
+  border-bottom: 1px solid var(--faq-item-border-color);
   margin-bottom: 10px;
 }
 
 .faq-button {
-  background-color: var(--faq-question-color);
-  color: var(--faq-bg-color);
+  background-color: var(--faq-btn-bg-color);
+  color: var(--faq-btn-text-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -315,7 +309,7 @@ header .intro-text .btn-custom {
 }
 
 .faq-button:hover {
-  background-color: var(--faq-bg-color);
+  background-color: var(--faq-btn-hover-bg-color);
 }
 
 .faq-icon {
@@ -351,7 +345,7 @@ header .intro-text .btn-custom {
 }
 
 #contact .section-title h2 {
-  color: var(--contact-text-color);
+  color: var(--contact-title-color);
   margin-bottom: 10px;
   font-size: 2rem;
   font-weight: bold;
@@ -368,8 +362,8 @@ header .intro-text .btn-custom {
   padding: 10px;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--contact-bg-color);
-  background-color: var(--contact-text-color);
+  color: var(--contact-input-text-color);
+  background-color: var(--contact-input-bg-color);
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 4px;
@@ -377,7 +371,7 @@ header .intro-text .btn-custom {
 }
 
 #contact .form-control:focus {
-  border-color: var(--contact-text-color);
+  border-color: var(--contact-input-focus-border-color);
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(244, 175, 27, 0.25);
 }
@@ -387,7 +381,7 @@ header .intro-text .btn-custom {
 }
 
 #contact .help-block.text-danger {
-  color: var(--contact-text-color);
+  color: var(--contact-help-block-color);
 }
 
 #contact .btn-custom {
@@ -401,8 +395,8 @@ header .intro-text .btn-custom {
 }
 
 #contact .btn-custom:hover {
-  background-color: var(--contact-btn-text-color);
-  color: var(--contact-btn-bg-color);
+  background-color: var(--contact-btn-hover-bg-color);
+  color: var(--contact-btn-hover-text-color);
 }
 
 #contact .contact-info {
@@ -410,11 +404,11 @@ header .intro-text .btn-custom {
 }
 
 #contact .contact-item h3 {
-  color: var(--contact-text-color);
+  color: var(--contact-info-title-color);
 }
 
 #contact .contact-item p {
-  color: var(--contact-text-color);
+  color: var(--contact-info-text-color);
 }
 
 #contact .contact-item span {
@@ -432,18 +426,23 @@ header .intro-text .btn-custom {
 }
 
 #contact .social ul li a {
-  color: var(--contact-btn-bg-color);
+  color: var(--contact-social-link-color);
   font-size: 20px;
 }
 
 #contact .social ul li a:hover {
-  color: var(--contact-text-color);
+  color: var(--contact-social-link-hover-color);
+}
+
+.trustpilot-footer {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 #footer {
   padding: 30px 0;
-  background-color: var(--contact-bg-color);
-  color: var(--contact-text-color);
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
   text-align: center;
 }
 
@@ -453,10 +452,10 @@ header .intro-text .btn-custom {
 }
 
 #footer a {
-  color: var(--contact-btn-bg-color);
+  color: var(--footer-link-color);
   text-decoration: none;
 }
 
 #footer a:hover {
-  color: var(--contact-text-color);
+  color: var(--footer-link-hover-color);
 }

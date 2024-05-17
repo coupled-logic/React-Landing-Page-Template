@@ -1,5 +1,4 @@
 import React from "react";
-import { Trustpilot } from "./Trustpilot";
 
 export const Navigation = (props) => {
   return (
@@ -42,14 +41,11 @@ export const Navigation = (props) => {
               <a href="#services" className="page-scroll">
                 Services
               </a>
-            </li>
+            </li>>
             <li>
               <a href="#contact" className="page-scroll">
                 Contact
               </a>
-            </li>
-            <li className="trustpilot-nav">
-              <Trustpilot />
             </li>
           </ul>
         </div>

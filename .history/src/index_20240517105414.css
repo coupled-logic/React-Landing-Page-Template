@@ -43,13 +43,13 @@
   --color-text: var(--white-1);
   */
 
-  /* Color Scheme 2 */
+  Color Scheme 2 */
   --color-bg: var(--navy-2);
   --color-fg1: var(--yellow-2);
   --color-fg2: var(--beige-2);
   --color-text: var(--white-2);
 
-  /* Color Scheme 3 */
+  /* Color Scheme 3
   /*
   --color-bg: var(--purple-3);
   --color-fg1: var(--water-leaf-3);
@@ -70,24 +70,18 @@
 :root {
   --nav-bg-color: var(--color-bg);
   --nav-text-color: var(--color-fg1);
-  --nav-hover-color: var(--color-fg2);
   --header-bg-color: var(--color-fg2);
   --header-text-color: var(--color-text);
-  --header-btn-bg-color: var(--color-bg);
-  --header-btn-text-color: var(--color-fg2);
-  --features-bg-color: var(--color-bg);
-  --features-title-color: var(--color-text);
-  --features-icon-color: var(--color-fg1);
-  --features-text-color: var(--color-fg2);
+  --feature-bg-color: var(--color-bg);
+  --feature-icon-color: var(--color-fg1);
+  --feature-text-color: var(--color-fg2);
   --about-bg-color: var(--color-fg1);
   --about-header-color: var(--color-bg);
-  --about-text-color: var(--color-bg);
-  --about-list-color: var(--color-fg2);
-  --services-bg-color: var(--color-bg);
-  --services-title-color: var(--color-text);
-  --services-text-color: var(--color-text);
-  --services-tile-bg-color: var(--color-fg2);
-  --services-icon-color: var(--color-bg);
+  --about-text-color: var(--color-fg2);
+  --service-bg-color: var(--color-bg);
+  --service-text-color: var(--color-fg2);
+  --service-tile-bg-color: var(--color-fg1);
+  --service-icon-color: var(--color-bg);
   --faq-bg-color: var(--color-fg1);
   --faq-question-color: var(--color-bg);
   --faq-answer-bg-color: var(--color-fg2);
@@ -98,59 +92,50 @@
   --contact-btn-text-color: var(--color-bg);
 }
 
-/* General Styles */
+/* Apply styles to the elements using the defined variables */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-/* Navigation Styles */
+/* Navigation styles */
 #menu {
   background-color: var(--nav-bg-color);
+  color: var(--nav-text-color);
 }
 
-#menu .navbar-brand,
-#menu .nav li a {
+#menu .navbar-brand, #menu .nav li a {
   color: var(--nav-text-color);
 }
 
 #menu .nav li a:hover {
-  color: var(--nav-hover-color);
+  color: var(--header-bg-color);
 }
 
-.trustpilot-nav {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-/* Header Styles */
+/* Header styles */
 header {
   background-color: var(--header-bg-color);
 }
 
-header .intro-text h1,
-header .intro-text p {
+header .intro-text h1, header .intro-text p {
   color: var(--header-text-color);
 }
 
 header .intro-text .btn-custom {
-  background-color: var(--header-btn-bg-color);
-  color: var(--header-btn-text-color);
+  background-color: var(--nav-bg-color);
+  color: var(--nav-text-color);
 }
 
-/* Features Styles */
+/* Features styles */
 #features {
   padding: 60px 0;
-  background-color: var(--features-bg-color);
+  background-color: var(--feature-bg-color);
 }
 
 #features .section-title {
@@ -158,7 +143,7 @@ header .intro-text .btn-custom {
 }
 
 #features .section-title h2 {
-  color: var(--features-title-color);
+  color: var(--feature-text-color);
   font-size: 2rem;
   font-weight: bold;
 }
@@ -170,31 +155,21 @@ header .intro-text .btn-custom {
 
 #features .feature-item i {
   font-size: 3rem;
-  color: var(--features-icon-color);
+  color: var(--feature-icon-color);
   margin-bottom: 20px;
 }
 
-#features .feature-item h3 {
-  color: var(--features-text-color);
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+#features .feature-item h3, #features .feature-item p {
+  color: var(--feature-text-color);
 }
 
-#features .feature-item p {
-  color: var(--features-text-color);
-  font-size: 1rem;
-}
-
-/* About Styles */
+/* About styles */
 #about {
   padding: 60px 0;
   background-color: var(--about-bg-color);
 }
 
-#about h2,
-#about h3,
-#about p {
+#about h2, #about h3, #about p {
   color: var(--about-header-color);
 }
 
@@ -204,25 +179,25 @@ header .intro-text .btn-custom {
 }
 
 #about ul li {
-  color: var(--about-list-color);
+  color: var(--about-text-color);
   margin: 10px 0;
 }
 
-/* Services Styles */
+/* Services styles */
 #services {
   padding: 60px 0;
-  background-color: var(--services-bg-color);
+  background-color: var(--service-bg-color);
 }
 
 #services .section-title h2 {
-  color: var(--services-title-color);
+  color: var(--service-text-color);
   margin-bottom: 20px;
   font-size: 2rem;
   font-weight: bold;
 }
 
 #services .section-title p {
-  color: var(--services-text-color);
+  color: var(--service-text-color);
   font-size: 1.2rem;
   margin-bottom: 40px;
 }
@@ -235,7 +210,7 @@ header .intro-text .btn-custom {
 }
 
 #services .service-item {
-  background-color: var(--services-tile-bg-color);
+  background-color: var(--service-tile-bg-color);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -250,7 +225,7 @@ header .intro-text .btn-custom {
 
 #services .icon-container {
   font-size: 3rem;
-  color: var(--services-icon-color);
+  color: var(--service-icon-color);
   margin-bottom: 20px;
 }
 
@@ -259,19 +234,19 @@ header .intro-text .btn-custom {
 }
 
 #services .service-desc h3 {
-  color: var(--services-icon-color);
+  color: var(--service-icon-color);
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 #services .service-desc p {
-  color: var(--services-icon-color);
+  color: var(--service-icon-color);
   font-size: 1rem;
   margin: 0;
 }
 
-/* FAQ Styles */
+/* FAQ styles */
 .faq-container {
   padding: 50px 20px;
   background-color: var(--faq-bg-color);
@@ -318,17 +293,6 @@ header .intro-text .btn-custom {
   background-color: var(--faq-bg-color);
 }
 
-.faq-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.faq-icon .icon {
-  height: 24px;
-  width: 24px;
-}
-
 .faq-answer {
   background-color: var(--faq-answer-bg-color);
   color: var(--faq-answer-text-color);
@@ -340,7 +304,7 @@ header .intro-text .btn-custom {
   margin: 0;
 }
 
-/* Contact Form Styles */
+/* Contact styles */
 #contact {
   padding: 60px 0;
   background-color: var(--contact-bg-color);
@@ -368,8 +332,8 @@ header .intro-text .btn-custom {
   padding: 10px;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--contact-bg-color);
-  background-color: var(--contact-text-color);
+  color: var(--contact-text-color);
+  background-color: var(--color-text);
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 4px;
@@ -377,7 +341,7 @@ header .intro-text .btn-custom {
 }
 
 #contact .form-control:focus {
-  border-color: var(--contact-text-color);
+  border-color: var(--color-fg1);
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(244, 175, 27, 0.25);
 }
@@ -387,7 +351,7 @@ header .intro-text .btn-custom {
 }
 
 #contact .help-block.text-danger {
-  color: var(--contact-text-color);
+  color: var(--color-fg1);
 }
 
 #contact .btn-custom {
@@ -432,7 +396,7 @@ header .intro-text .btn-custom {
 }
 
 #contact .social ul li a {
-  color: var(--contact-btn-bg-color);
+  color: var(--contact-bg-color);
   font-size: 20px;
 }
 
@@ -453,10 +417,10 @@ header .intro-text .btn-custom {
 }
 
 #footer a {
-  color: var(--contact-btn-bg-color);
+  color: var(--faq-answer-bg-color);
   text-decoration: none;
 }
 
 #footer a:hover {
-  color: var(--contact-text-color);
+  color: var(--contact-btn-bg-color);
 }
